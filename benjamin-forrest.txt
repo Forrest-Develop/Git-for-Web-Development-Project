@@ -66,7 +66,7 @@ link to finished codepen: https://codepen.io/benjamin-forrest/pen/porPejZ?editor
     29. How do I select everything on the page? 
     You can use a universal selector "*" to select everything on your page. In your CSS this would look like: *{}
     30. How do I write a comment in CSS?
-    In order to write a comment in CSS wrap your comment in the <!-- --> wrappers.
+    In order to write a comment in CSS wrap your comment in the /* */ wrappers.
     31. How do I find out what file I am in, when I am using the command line? 
     You can type "pwd" into your command line and it will print the directory you are currently in.
     32. Using the command line - how do I see a list of files/folders in my current folder?
