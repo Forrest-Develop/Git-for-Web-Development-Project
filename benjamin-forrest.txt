@@ -1,0 +1,103 @@
+<!-- Questions to Submit in today's file first-lastname.txt --> 
+<!--
+Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes.
+    
+link to finished codepen: https://codepen.io/benjamin-forrest/pen/LYzExRR?editors=1100
+
+    1. What is Semantic HTML?
+    Semantic HTML is HTML whose meaning is obvious to the browser, developers, and screen-reader software. Examples include tags such as section, header, footer, form, table...etc. 
+    2. What is HTML used for? 
+    HTML is used to provide the framework or structure of a webpage. Think of it as the bones of a website.
+    3. What is an attribute and where do we put it? 
+    An attribute provides information about an HTML element. Attributes are also found within said elements. Example of an element would be the href="" attribute within the anchor(<a>) tag.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    The h1 tag is used to indicate the most important piece of text on a webpage. This is usually the main title of the entire webpage. It is best practice to only use the h1 tag once per page.
+    5. Name two tags that have required attributes.
+    The anchor(<a></a>) tag and the image(<img>) tag both have required attributes to function correctly.
+    6. What do we put in the head of our HTML document?
+    The head of an HTML document usually contains metadata such as the document title, character set, styles, links, and scripts. This information is not usually visible to the end user but is extremely useful in the function of the website.  
+    7. What is an id? 
+    An id is a unique identifier for an element on a page.
+    8. What elements can I add an id to? 
+    You can add an id to any element on a page. In some cases it is recommended that all elements are assigned an id even if that id will not be called. 
+    9. How many times can I use the same id on a page?
+    You cannot use the same id on a page. If you need to select more than one element, use a class instead. 
+    10. What is a class? 
+    A class is an identifier that can be applied to multiple elements on a page and referenced together.
+    11. What elements can I add a class to? 
+    You can add a class to any element that you choose. 
+    12. How many times can I use the same class on a page?
+    You can use the same class on a page as many times as you would like. 
+    13. How do I get my link to open in a new tab?
+    You can get your links to open in a new tab by adding target="_blank" attribute to your anchor tags(<a></a>)
+    14. What is the alt attribute in the image tag used for? 
+    The alt attribute in the img tag is used to provide a text description of the image in case it cannot be displayed. alt text for images is also useful for providing context to the user if they are using a screen-reader.
+    15. How do I reference an id?
+    You can reference an id by calling it in your css stylesheet.: #id{}
+    16. What is the difference between a section and a div?
+    The main difference between a section and a div element is that a section element is semantic, a div is not considered semantic.
+    17. What is CSS used for? 
+    CSS is used to build on top of the HTML "bones" of a webpage. CSS provides mainly visual styling for the page.
+    18. How to we select an element? Example - every h2 on the page
+    To select an element such as the h2 in the given example, write the following code in your CSS file: h2{}
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    A class is used to "classify" multiple elements in a page. An id is used to give one element it's own unique identifier. 
+    20. How do we select classes in CSS?
+    You can select classes in your HTML from your CSS by referencing the name of the class preceded by a ".": .class{}
+    21. How do we select a p element with a single class of “human””?
+    To select a p element with a class of "human", add this code to your CSS file: p .human{}
+    22. What is a parent child selector? When would this be useful?
+    The parent child selector is the ">" symbol. This is useful to match all the elements which are child of a specified element.
+    23. How do you select all links within a div with the class of sidebar?
+    To select all links within a div with the class of sidebar add this code to your stylesheet:
+    div link sidebar{}
+    24. What is a pseudo selector?
+    A pseudo selector is used to define the state of an element. An example would be the :hover attribute.
+    25. What do we use the change the spacing between lines?
+    Use line-height property to change the spacing between the lines. 
+    26. What do we use to change the spacing between letters?
+    Use letter-spacing property to change the spacing between the letters.
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    You can use the text-transform property to change everything to uppercase(capitals),lowercase, capitalize. using the values uppercase, lowercase, and capitalize respectively.
+    28. How do I add a 1px border around my div that is dotted and black?
+    You can add a 1px border around your div by adding the style=border 1px black within your div tag.
+    29. How do I select everything on the page? 
+    You can use a universal selector "*" to select everything on your page. In your CSS this would look like: *{}
+    30. How do I write a comment in CSS?
+    In order to write a comment in CSS wrap your comment in the /* */ wrappers.
+    31. How do I find out what file I am in, when I am using the command line? 
+    You can type "pwd" into your command line and it will print the directory you are currently in.
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    To see a list of files/folders in your current folder type "ls" into your command line.
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+    You can remove a file via the command line on a Unix/Mac machine by typing "rm -i filename", on a Windows machine by typing "Del 'myFile.txt'".
+    34. Why should I use version control? 
+    Using version control allows you to constantly have trailing saves for your work as well as restore points if you have a team working on code and one person accidentally changes parts of the code that are not meant to be changed.
+    35. How often should I commit to github?
+    You should commit to github after every major feature you finish or every 20 minutes, whichever is sooner.
+    36. What is the command we would use to push our repo up to github? 
+    Type "git push" to push your repo to github.
+    37. Walk me through Lambda's git flow.
+        a. Navigate to your git repo that you need to create a pull request for. 
+        b. FORK the repo to create a copy of it on your own account. Click the fork button in the top right hand corner of the repo screen in your browser. If you have forked correctly, you should now see your username at the top of the repo.
+        c. Clone your repo. To do this click to green code button on the right. Make sure to select SSH, and then copy the url in the box.
+        d. Inside your terminal or gitbash navigate to where you want to put these files on your computer and type git clone and paste the url and then press enter.
+        e. "cd" into your new repository by typing "cd" and then the repo name.
+        f. Create a branch by typing "git checkout -b branch-name" (Note the branch name should be your firstname-lastname)
+        g. Open your project up in VS code by using the code . command or by opening it manually in VS code. 
+        h. When you are ready to push some changes back up to git hub, use these commands:
+            1h. git add . - adds all changes you've made so far to the staging area 
+            2h. git commit -m 'message' commits changes 
+            3h. git push -u origin branch-name - this creates your branch remotely and pushes the changes to that branch
+        i. Once you are finished, you can go ahead and create a pull request. The purpose of a pull request is to let your team know that there are changes to review. Click on the button that says "compare and pull request". 
+        j. Once you've clicked the compare and pull request button it will take you to the pull request screen. Click on the drop down and choose your repository as the base.
+        k. Make sure you are comparing 'master' or 'main' to your branch and then go ahead and click on the button to create pull request.
+        l. Submit the url for your pull request in Canvas.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    2. What happens when an element is positioned absolutely? 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
